@@ -1,0 +1,486 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{17AA1A80-F53C-4C77-9256-ED91C6DB0170}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>PCExterno.My.MyApplication</StartupObject>
+    <RootNamespace>PCExterno</RootNamespace>
+    <AssemblyName>PCExterno</AssemblyName>
+    <MyType>WindowsForms</MyType>
+    <ManifestCertificateThumbprint>35C046FBDE83B8E790D6F882F50DA49A14649A60</ManifestCertificateThumbprint>
+    <ManifestKeyFile>PCExterno_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignAssembly>false</SignAssembly>
+    <PublishUrl>c:\SiConExterno\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>Consultorio Externo</ProductName>
+    <PublisherName>Historias Clínicas y Partes Diarios</PublisherName>
+    <CreateWebPageOnPublish>false</CreateWebPageOnPublish>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>PCExterno.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PCExterno.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.2.3600.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BHraCli.Designer.vb">
+      <DependentUpon>BHraCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BHraCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BPartDia.Designer.vb">
+      <DependentUpon>BPartDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BPartDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BTabPac.Designer.vb">
+      <DependentUpon>BTabPac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BTabPac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CabPartDia.Designer.vb">
+      <DependentUpon>CabPartDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CabPartDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ContGen.Designer.vb">
+      <DependentUpon>ContGen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ContGen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HraCli.Designer.vb">
+      <DependentUpon>HraCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HraCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MCondAlta.Designer.vb">
+      <DependentUpon>MCondAlta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MCondAlta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MContPac.Designer.vb">
+      <DependentUpon>MContPac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MContPac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDocs.Designer.vb">
+      <DependentUpon>MDocs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MDocs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEstCiv.Designer.vb">
+      <DependentUpon>MEstCiv.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MEstCiv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MGraIns.Designer.vb">
+      <DependentUpon>MGraIns.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MGraIns.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MIdma.Designer.vb">
+      <DependentUpon>MIdma.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MIdma.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTabDiag.Designer.vb">
+      <DependentUpon>MTabDiag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MTabDiag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTabOcu.Designer.vb">
+      <DependentUpon>MTabOcu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MTabOcu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTabRel.Designer.vb">
+      <DependentUpon>MTabRel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MTabRel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTipHosp.Designer.vb">
+      <DependentUpon>MTipHosp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MTipHosp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MTipPac.Designer.vb">
+      <DependentUpon>MTipPac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MTipPac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PartDia.Designer.vb">
+      <DependentUpon>PartDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PartDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Principal.Designer.vb">
+      <DependentUpon>Principal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RepEstMed.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepEstMed.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepEstQui.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepEstQui.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepHraCli.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepHraCli.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepPartDia.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepPartDia.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RepRepMen.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RepRepMen.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Rep_EstMed.Designer.vb">
+      <DependentUpon>Rep_EstMed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rep_EstMed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rep_EstQui.Designer.vb">
+      <DependentUpon>Rep_EstQui.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rep_EstQui.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rep_HraCli.Designer.vb">
+      <DependentUpon>Rep_HraCli.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rep_HraCli.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rep_PartDia.Designer.vb">
+      <DependentUpon>Rep_PartDia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rep_PartDia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rep_RepMen.Designer.vb">
+      <DependentUpon>Rep_RepMen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Rep_RepMen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabDiag.Designer.vb">
+      <DependentUpon>TabDiag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabDiag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabDoc.Designer.vb">
+      <DependentUpon>TabDoc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabDoc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabEnf.Designer.vb">
+      <DependentUpon>TabEnf.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabEnf.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabPac.Designer.vb">
+      <DependentUpon>TabPac.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabPac.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Variables.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BHraCli.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BHraCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BPartDia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BPartDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BTabPac.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>BTabPac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CabPartDia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>CabPartDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContGen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>ContGen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HraCli.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>HraCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MCondAlta.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MCondAlta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MContPac.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MContPac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDocs.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MDocs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MEstCiv.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MEstCiv.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MGraIns.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MGraIns.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MIdma.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MIdma.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTabDiag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MTabDiag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTabOcu.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MTabOcu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTabRel.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MTabRel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTipHosp.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MTipHosp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MTipPac.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>MTipPac.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartDia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>PartDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Principal.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Principal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepEstMed.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RepEstMed.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepEstQui.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RepEstQui.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepHraCli.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RepHraCli.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepPartDia.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RepPartDia.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RepRepMen.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RepRepMen.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_EstMed.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rep_EstMed.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_EstQui.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rep_EstQui.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_HraCli.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rep_HraCli.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_PartDia.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rep_PartDia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rep_RepMen.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>Rep_RepMen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabDiag.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabDiag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabDoc.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabDoc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabEnf.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabEnf.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabPac.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>TabPac.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BaseApplicationManifest Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="BusinessObjects.CrystalReports.NET.2.0">
+      <Visible>False</Visible>
+      <ProductName>Crystal Reports para .NET Framework 2.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

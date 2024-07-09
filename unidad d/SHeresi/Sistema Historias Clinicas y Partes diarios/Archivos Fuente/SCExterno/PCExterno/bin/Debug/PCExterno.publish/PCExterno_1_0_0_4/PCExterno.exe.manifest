@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asmv1:assemblyIdentity name="PCExterno.exe" version="1.0.0.4" publicKeyToken="b80103ec0f5005a8" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PCExterno" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PCExterno.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="4" minorVersion="10" buildNumber="0" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="CrystalDecisions.CrystalReports.Engine" version="10.2.3600.0" publicKeyToken="692FBEA5521E1304" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PCExterno.exe" size="10350592">
+      <assemblyIdentity name="PCExterno" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>9uhHxXiTTW2QwpQxpc5JD1yBX9s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=RONY\RonyMiranda" issuerKeyHash="6729d1a3f199d977bccf52f72e9fbd4031d4609e" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>LWZBApOJXmr4B062Q5FlruBybCw=</DigestValue></Reference></SignedInfo><SignatureValue>r1zzS4DwI3awZJpuphsTax6faIYbM5AqLDYyTKZdUQKpd2m8SQVjMjuYWAIyeUp7KZsJ+oHDePl5+lCgDr5t/OOQEfGyeE28CukW1r5O9XVKQP7oDN4FlRKBynGXydnsclmzz7ovEUHTqciSJzGnSm2ytK8UDmM0oEldP6UBFS0=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>ze5YGlzmirFbAmgc5xBccjCJhaaDWp4GUdp3ZHkZi2cc5BUf0iDKH6O6HLP0L/odMTb2EWaEVWmF68BuRh/aAIXrJDSzwPGrORvCGJpBHELjdS/igmjn+yx2bo6uzzb1C2fAZnXDF55r+1DDz6cHz1AzEXh/vKQBsFbOhS4IRqs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="2c6c72e0ae659143b64e07f86a5e89930241662d" Description="" Url=""><as:assemblyIdentity name="PCExterno.exe" version="1.0.0.4" publicKeyToken="b80103ec0f5005a8" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=RONY\RonyMiranda</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>mxaWwS8zVmN9ewn5DgaXMn3xplw=</DigestValue></Reference></SignedInfo><SignatureValue>KqAKAEpYJYMUeGXyRMNQzv0mYnbFpCV84/0dRjPQH/g/RuL5+nNlfpDyDwgaywTc+tcHM2vMuXIA9tP2dxejgIyhk8/FgYfevAFq0KaViyIY1HVtuqD4URjVn1FeN9dMtXID26suHmKoxXdeFdGrns2IUTKdxXE9WY23aV+KNYc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>ze5YGlzmirFbAmgc5xBccjCJhaaDWp4GUdp3ZHkZi2cc5BUf0iDKH6O6HLP0L/odMTb2EWaEVWmF68BuRh/aAIXrJDSzwPGrORvCGJpBHELjdS/igmjn+yx2bo6uzzb1C2fAZnXDF55r+1DDz6cHz1AzEXh/vKQBsFbOhS4IRqs=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB0TCCAT6gAwIBAgIQAYMX6y5hXqBCCcZ0OZ228DAJBgUrDgMCHQUAMCsxKTAnBgNVBAMeIABSAE8ATgBZAFwAUgBvAG4AeQBNAGkAcgBhAG4AZABhMB4XDTA3MDYxMTE4NDMwM1oXDTA4MDYxMTAwNDMwM1owKzEpMCcGA1UEAx4gAFIATwBOAFkAXABSAG8AbgB5AE0AaQByAGEAbgBkAGEwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAM3uWBpc5oqxWwJoHOcQXHIwiYWmg1qeBlHad2R5GYtnHOQVH9Igyh+juhyz9C/6HTE29hFmhFVphevAbkYf2gCF6yQ0s8DxqzkbwhiaQRxC43Uv4oJo5/ssdm6Ors829QtnwGZ1wxeea/tQw8+nB89QMxF4f7ykAbBWzoUuCEarAgMBAAEwCQYFKw4DAh0FAAOBgQADvHqSlBwvV2PXLJMa84ABKYOwYD9GZ3YCYR8/EuOximz6n0/poQ90DEXgxuq+4LEimZeyuLQdhXLWkfoBG6rZeKeGgcr2BGHx2K6jcxS1Y4M5BHql0VZexBiK8gwuMeD0TfXZJ+Gzf4CeNBLnx4XsQ5u953jkCvGwAsk2eIHzqA==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
